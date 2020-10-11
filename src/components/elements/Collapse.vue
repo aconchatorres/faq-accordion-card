@@ -38,10 +38,18 @@ export default {
       type: Array,
       default: () => []
     },
-    isOpen: {
+    initial: {
       type: Number,
       default: 0
     }
+  },
+  data () {
+    return {
+      isOpen: 0
+    }
+  },
+  created () {
+    this.isOpen = this.initial
   }
 }
 </script>
@@ -53,6 +61,9 @@ export default {
   margin-top: 10px;
   border-bottom: 0.01em solid hsla(240, 6%, 50%, 0.404) !important;
   margin-right: 60px !important;
+  @media screen and (max-width: 1024px) {
+    margin-right: 0 !important;
+  }
 }
 .card-header {
   box-shadow: none !important;
