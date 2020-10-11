@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import FAQ from './components/FAQ.vue'
+import FAQ from './components/views/FAQ.vue'
 
 export default {
   name: 'App',
@@ -24,6 +24,5 @@ html {
 #app {
   font-family: 'Kumbh Sans', sans-serif;
   color: hsl(238, 29%, 16%);
-  font-size: 16px;
 }
 </style>
