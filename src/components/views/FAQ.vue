@@ -1,9 +1,12 @@
 <template>
   <div class="FAQ">
     <div class="background-gradient">
-      <div class="white-pill column is-three-fifths-desktop is-hidden-touch is-hidden-tablet-only">
+      <div class="white-pill column is-two-thirds-desktop is-hidden-touch is-hidden-tablet-only">
         <div class="columns">
-          <div class="column left"></div>
+          <div class="column left">
+            <div class="woman-img"></div>
+            <img class="box-img" src="../../assets/images/illustration-box-desktop.svg" alt="">
+          </div>
           <div class="column right">
             <div class="right-content">
               <h1 class="title-faq">FAQ</h1>
@@ -76,11 +79,33 @@ export default {
   }
   .left {
     height: 65vh;
+    background-image: url("../../assets/patterns/bg-pattern-desktop.svg");
+    // background-position: 120% 68%;
+    background-position: -550px -290px;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    padding-right: 0;
+    .woman-img {
+      background-image: url("../../assets/images/illustration-woman-online-desktop.svg");
+      height: 100%;
+      background-repeat: no-repeat;
+      // background-position: -280% 45%;
+      background-position: -60px 60px;
+    }
+    .box-img {
+      position: absolute;
+      top: 44%;
+      left: 10.3%;
+      // top: 340px;
+      // left: 165px;
+    }
   }
   .right {
     height: 65vh;
+    padding-left: 2em;
     padding-top: 3.5em;
     padding-bottom: 3.5em;
+    background-color: white;
     .right-content {
       height: 100%;
       .collapse-container {
