@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FAQ/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FAQ from './components/FAQ.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FAQ
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+  overflow-y: auto !important;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: hsl(238, 29%, 16%);
+  font-size: 16px;
 }
 </style>
